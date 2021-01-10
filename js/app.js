@@ -1,5 +1,4 @@
-console.log('hola');
-
+console.log("hola");
 
 (function () {
   let DB;
@@ -29,13 +28,12 @@ console.log('hola');
       });
 
       objectStore.createIndex("nombre", "nombre", { unique: false });
-      objectStore.createIndex("email", "email", { unique: false });
+      objectStore.createIndex("email", "email", { unique: true });
       objectStore.createIndex("telefono", "telefono", { unique: false });
       objectStore.createIndex("empresa", "empresa", { unique: false });
       objectStore.createIndex("id", "id", { unique: true });
 
-      console.log('DB lista y creada');
-      
+      console.log("DB lista y creada");
     };
   }
 })();
