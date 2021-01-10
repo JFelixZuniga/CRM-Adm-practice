@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM - IndexedDB</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/tailwind.min.css" />
+    <link rel="stylesheet" href="./css/social-media.css" />
   </head>
   <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
@@ -112,7 +119,59 @@
         </div>
       </main>
     </div>
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>
+          Created with <i class="fa fa-heart"></i>
+          by
+          <a target="_blank" href="#">JFZuniga</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <!-- <h4>Social Media</h4> -->
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/JomFelixZ"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jfelixzuniga/"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JFelixZuniga"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">Social Media</button>
+
+    <div class="floating-text">
+      <a
+        href="https://twitter.com/search?q=%23100DaysOfCode&src=typeahead_click"
+        target="_blank"
+        >#100DaysOfCode</a
+      >
+    </div>
     <script src="./js/editarcliente.js"></script>
     <script src="./js/funciones.js"></script>
+    <script src="./js/social-media.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 (function () {
-  let DB;
   const formulario = document.querySelector("#formulario");
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -30,6 +29,8 @@
       telefono,
       empresa,
     };
+
+    // Gerena un ID único
     cliente.id = Date.now();
 
     crearNuevoCliente(cliente);
@@ -37,6 +38,7 @@
 
   function crearNuevoCliente(cliente) {
     const transaction = DB.transaction(["crm"], "readwrite");
+    console.log(transaction);
 
     const objectStore = transaction.objectStore("crm");
 
@@ -56,5 +58,4 @@
       window.location.href = "index.html";
     }, 3000);
   }
-
 })();
